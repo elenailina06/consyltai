@@ -7,6 +7,27 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TabControl HorizontalAlignment="Left" Height="374" Margin="26,18,0,0" VerticalAlignment="Top" Width="736">
+            <TabItem Header="Вкладка 1">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="44*"/>
+                        <ColumnDefinition Width="321*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Name="qwe" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Введите длину квадрата" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <TextBox Name="asd" HorizontalAlignment="Left" Height="23" Margin="10,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+                    <Button Content="периметр " HorizontalAlignment="Left" Margin="8,86,0,0" VerticalAlignment="Top" Width="122" Height="31" Click="Button_Click" Grid.ColumnSpan="2"/>
+                    <TextBox Name="tect" HorizontalAlignment="Left" Height="23" Margin="8,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+                    <Button Content="площадь" HorizontalAlignment="Left" Margin="8,199,0,0" VerticalAlignment="Top" Width="115" Grid.ColumnSpan="2" Height="28" Click="Button_Click_2"/>
+                    <TextBlock x:Name="qwe_Copy" HorizontalAlignment="Left" Margin="8,138,0,0" TextWrapping="Wrap" Text="Введите длину квадрата" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Вкладка 2">
+                <Grid Background="#FFE5E5E5">
+                    <Button Content="Загрузите картинку" HorizontalAlignment="Left" Margin="235,25,0,0" VerticalAlignment="Top" Width="216" Click="Button_Click_1" Height="32"/>
+                    <Image Name="img1" HorizontalAlignment="Left" Height="241" Margin="47,76,0,0" VerticalAlignment="Top" Width="612"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
