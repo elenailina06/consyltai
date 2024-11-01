@@ -16,9 +16,7 @@ using Microsoft.Win32;
 
 namespace WpfApp7
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
+  
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -28,14 +26,10 @@ namespace WpfApp7
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int a=Convert.ToInt32(кг.Text);
-            int b = Convert.ToInt32(цена.Text);
-            int c = Convert.ToInt32(ккг.Text);
+            int a = Convert.ToInt32(сек.Text);
 
-
-
-            int d = b*c/a;
-            итог.Text = "результат " + d;
+            int d = a/3600;
+            часы.Text = "результат = " + d;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -46,7 +40,6 @@ namespace WpfApp7
                 img1.Source = new BitmapImage(new Uri(fileName));
             }
         }
-
 
     }
 }
