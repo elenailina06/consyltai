@@ -9,17 +9,20 @@
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="374" Margin="26,18,0,0" VerticalAlignment="Top" Width="736">
             <TabItem Header="Вкладка 1">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="#FFE5E5E5" Margin="0,3,0,-3">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="44*"/>
                         <ColumnDefinition Width="321*"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Name="qwe" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Введите длину квадрата" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-                    <TextBox Name="asd" HorizontalAlignment="Left" Height="23" Margin="10,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
-                    <Button Content="периметр " HorizontalAlignment="Left" Margin="8,86,0,0" VerticalAlignment="Top" Width="122" Height="31" Click="Button_Click" Grid.ColumnSpan="2"/>
-                    <TextBox Name="tect" HorizontalAlignment="Left" Height="23" Margin="8,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
-                    <Button Content="площадь" HorizontalAlignment="Left" Margin="8,199,0,0" VerticalAlignment="Top" Width="115" Grid.ColumnSpan="2" Height="28" Click="Button_Click_2"/>
-                    <TextBlock x:Name="qwe_Copy" HorizontalAlignment="Left" Margin="8,138,0,0" TextWrapping="Wrap" Text="Введите длину квадрата" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <TextBlock Name="qwe" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="КГ" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <TextBox Name="кг" HorizontalAlignment="Left" Height="23" Margin="10,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+                    <Button Content="рассчитать" HorizontalAlignment="Left" Margin="8,148,0,0" VerticalAlignment="Top" Width="122" Height="31" Click="Button_Click" RenderTransformOrigin="-1.648,-2.773" Grid.ColumnSpan="2"/>
+                    <TextBox Name="цена" HorizontalAlignment="Left" Height="23" Margin="12,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" />
+                    <TextBlock x:Name="qwe_Copy" HorizontalAlignment="Left" Margin="10,70,0,0" TextWrapping="Wrap" Text="Цена" VerticalAlignment="Top" RenderTransformOrigin="0.66,-2.531"/>
+                    <TextBox Name="итог"  HorizontalAlignment="Left" Height="23" Margin="8,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"  RenderTransformOrigin="0.451,1.573"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="12,198,0,0" TextWrapping="Wrap" Text="Итог" VerticalAlignment="Top" RenderTransformOrigin="-8.835,2.031"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="108,10,0,0" TextWrapping="Wrap" Text="купленные кг" VerticalAlignment="Top" RenderTransformOrigin="0.165,1.768" Grid.Column="1"/>
+                    <TextBox x:Name="ккг" HorizontalAlignment="Left" Height="23" Margin="108,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"  Grid.Column="1"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Вкладка 2">

@@ -28,10 +28,14 @@ namespace WpfApp7
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int a=Convert.ToInt32(asd.Text);
- 
-            int c = 4*a ;
-            asd.Text = "периметр " + c ;
+            int a=Convert.ToInt32(кг.Text);
+            int b = Convert.ToInt32(цена.Text);
+            int c = Convert.ToInt32(ккг.Text);
+
+
+
+            int d = b*c/a;
+            итог.Text = "результат " + d;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -43,12 +47,6 @@ namespace WpfApp7
             }
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-           
-            int b = Convert.ToInt32(tect.Text);
-            int c = b * b ;
-            tect.Text = "площадь " + c;
-        }
+
     }
 }
